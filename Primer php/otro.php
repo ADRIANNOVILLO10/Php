@@ -8,7 +8,7 @@ $cantidad=10;
 $_edad=15;
 $Edad=25;
 define("MINOMBRE", "ADRIAN NOVILLO");
-const OTRONOMBRE= "DIEGO ZABALLOS";
+const OTRONOMBRE= "DIEGO ZABALghLOS";
 
 ?>
 <!DOCTYPE html>
