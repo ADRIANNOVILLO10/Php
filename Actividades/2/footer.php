@@ -9,7 +9,7 @@
 
 <div class="container footer">
 
-    <a href="#">Realizado por: Adrián Novillo Lucendo</a>
+    <a href="#">Realizado por: Adrián Novillo Lucendo </a>
 </div>
 
 
