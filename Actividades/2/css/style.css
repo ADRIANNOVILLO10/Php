@@ -38,7 +38,6 @@ a:hover{
     position: fixed;
     left: 0;
     bottom: 0;
-    border: 2px outset rgba(0, 0, 0, 0.56);
 }
 
 @media only screen and (min-width<=768px)
