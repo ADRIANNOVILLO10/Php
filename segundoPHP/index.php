@@ -8,7 +8,7 @@
 <?php
 echo "hola";
 const SERVIDOR="https://google.es" ;
-define('OTROSERVIDOR','https://amazon.com');
+const OTROSERVIDOR = 'https://amazon.com';
 $usuario="juan";
 echo "<p>El servidor que mas visito es" . SERVIDOR. "</p>";
 echo "El usuario que utilizo es " , $usuario;
@@ -35,10 +35,75 @@ echo "El usuario que utilizo es " , $usuario;
     echo $fruta [2]. "<br>";
     $abe="ABCDEFGHIJKLMÑNOPQRSTUVWXYZ";
     echo  $abe[5]; //ojo ...las Ñ
+
     # podemos sumar una cadena con un int
     $numero='2';
-    echo "<br> El resultado es" . (2+$numero);
-?>
+    echo "<br> El resultado es" . (2+$numero)."<br>";
+    //resultados en booleano segun valor
+
+    if ($usuario=="Irina") {
+        echo "El nombre es Irina, Es verdadero";
+    }else{
+        echo "El nombre no es Irina, Es falso<br>";
+    }
+
+    $numero=33;
+    if ($numero){
+        echo $numero . ' => True <br>'; // la condición es verdadera
+            }else {
+        echo $numero . ' => False <br>'; // la condición es falsa
+    }
+    //declaracion o conversion de datos
+    echo (float) (0.2545+ 5975)*10;
+    $otroValor=(int) 5;
+    echo "<br>".$otroValor . "<br>";
+
+    # Matriz
+    $matrizDeNumeros[]=array();
+    for ($i=0;$i<10;$i++){
+        $matrizDeNumeros[$i]=$i*10;
+    }
+    #print_r - Imprime información legible para humanos sobre una variable
+print_r($matrizDeNumeros);
+
+
+    $matrizEjemplo[]=array();
+    for($i=0;$i<30;$i++) {
+        if ($i < 15) {
+            $matrizEjemplo[$i] = "a";
+        } else {
+            $matrizEjemplo[$i] = "b";
+        }
+    }
+    $matrizEjemplo1[]=array();
+             for ($i=0;$i<27;$i++){
+                 $matrizEjemplo1[$i]=$abe[$i];
+
+             }
+
+    print_r($matrizEjemplo1)
+    ?>
+
+    /* Ejercicio utilizanco For
+    *****************************
+    * Crea las tablas de multiplicar desde el 1 al 10
+    *
+    */
+
+    <?php
+
+
+    echo "<hr>";
+    echo "<h1>Tablas de multiplicar</h1>";
+        for ($i=0;$i<=10;$i++){
+            for ($u=0;$u<=10;$u++){
+                echo "$i x $u = ". $i*$u. "<br>";
+            }
+            echo "<br>";
+    }
+  
+    ?>
+
 
 </body>
 </html>

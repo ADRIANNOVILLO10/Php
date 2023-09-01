@@ -1,0 +1,28 @@
+.tabla{
+    border: solid 10px;
+    margin: auto;
+}
+.cabeza{
+    color: #000000;
+    background-color: #23b8da;
+}
+.tabla td{
+    border: #111111 solid 1px;
+    padding: 50px;
+}
+
+.text, h1, h2{
+    text-align: center;
+}
+
+.img2{
+    width: 50%;
+}
+
+.tabla2, tabla3{
+    border: solid 10px;
+    background-color: #23b8da;
+    border: #111111 solid 1px;
+    margin: auto;
+
+}
