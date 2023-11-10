@@ -1,0 +1,11 @@
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #F9B801;
+    padding: 50px 0 ;
+}
+
+.error{
+    color: crimson;
+}

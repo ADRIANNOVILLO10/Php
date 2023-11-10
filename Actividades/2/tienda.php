@@ -10,10 +10,8 @@
 </head>
 <body>
 <br>
-<img class="img1" src="img/Adidas%20Zapatillas.jpg" alt="">
-
-
-
+<img class="img1" src="img/books-5682442_1920.jpg" alt="">
+<hr>
 
 <?php
 include 'footer.php';

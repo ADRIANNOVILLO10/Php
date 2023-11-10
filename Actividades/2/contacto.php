@@ -6,55 +6,46 @@
     <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
+<script src="js/script.js"></script>
+
 <?php
-include 'header.php';
+    include 'header.php';
+
 ?>
 
 <h1>Formulario de Datos</h1>
-<form method="post" action="lectura.php" class="formulario">
+
+<?php
+if (isset($_GET['mensaje'])){
+    echo  "<ul class='error'>".$_GET['mensaje']."</ul>";
+}
+?>
+
+<form method="get" action="lectura.php" class="formulario">
 <div>
     <p>
     <label for="nombre">Nombre:</label>
-    <input id="nombre" maxlength="50" name="nombre">
+    <input id="nombre" maxlength="50" name="nombre"
+        class="entradas">
     </p>
     </div>
 
 <div>
     <p>
-        <label for="edad">Edad:</label>
-        <input type?="number" id="edad" min="0" max="100" step="1"
-               name="edad">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="entradas">
     </p>
 </div>
-
-    <div>
-    <p>
-    <label for="nombre">Nombre:</label>
-    <input id="nombre" maxlength="50" name="nombre">
-    </p>
-    </div>
-
-<div>
-    <p>
-        <label for="edad">Edad:</label>
-        <input type?="number" id="edad" min="0" max="100" step="1"
-               name="edad">
-    </p>
-</div>
-
-
 
     <div>
         <p>
-            <input type="submit" value="Enviar"
+            <input type="submit" value="Enviar" name="enviar"
         </p>
     </div>
-
 
     <?php
     include 'footer.php';
     ?>
-
 
 
 </form>

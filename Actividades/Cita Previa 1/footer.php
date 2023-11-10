@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css"
-    <?php
-    include "header.php"
-    ?>
 </head>
 <body>
 
+<div class="container footer">
 
-<?php
-include 'footer.php';
-?>
+    <a href="#" class="blanco">Agencia Española de protección de datos </a>
+</div>
+
+
+
+
 </body>
 </html>
-
-
-
-
-
-
-

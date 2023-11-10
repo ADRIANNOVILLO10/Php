@@ -1,6 +1,6 @@
 window.addEventListener("load",()=>{
     //validar datos del formulario
-    document.querySelector('.formulario').addEventListener('submit',validarFormulario);
+    document.querySelectorAll('.formulario').addEventListener('submit',validarFormulario);
 })
 function validarFormulario(e) {
     //como evitar q se vaya a lecura.php
@@ -8,10 +8,16 @@ function validarFormulario(e) {
     //alert("Validando...");
     let nombre=document.querySelector('#nombre');
     let email=document.querySelector('#email');
-    if (!nombre.value||!email.value){
+    let telefono=document.querySelector('#telefono');
+
+    if (!nombre.value && !email.value && !telefono.value){
         nombre.style.backgroundColor="pink";
 
         email.style.backgroundColor="pink";
+
+        telefono.style.backgroundColor="pink";
+
+
     return;
     }
 
